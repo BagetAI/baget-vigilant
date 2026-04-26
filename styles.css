@@ -1,0 +1,266 @@
+/* Vigilant Landing Page Styles - Editorial Magazine Style */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+  --bg-color: #FAFAF7;
+  --text-color: #1A1A1A;
+  --accent-color: #C9A96E;
+  --indigo: #4F46E5;
+  --navy: #0B0F19;
+  --border-color: #E5E5E0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Source Sans 3', sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* Header & Nav */
+header {
+  padding: 30px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  text-decoration: none;
+  color: var(--text-color);
+  text-transform: uppercase;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-color);
+  margin-left: 40px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+/* Hero Section */
+.hero {
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.hero-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--accent-color);
+  margin-bottom: 20px;
+  display: block;
+}
+
+.hero h1 {
+  font-size: 72px;
+  margin-bottom: 40px;
+  max-width: 900px;
+}
+
+.hero p {
+  font-size: 20px;
+  max-width: 600px;
+  margin-bottom: 50px;
+  color: #4A4A4A;
+}
+
+.hero-img-container {
+  width: 100%;
+  margin-top: 60px;
+  border: 1px solid var(--border-color);
+  padding: 10px;
+}
+
+.hero-img-container img {
+  width: 100%;
+  display: block;
+  filter: grayscale(20%);
+}
+
+/* Section Common */
+section {
+  padding: 120px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 80px;
+}
+
+.section-title h2 {
+  font-size: 48px;
+  width: 50%;
+}
+
+.section-title p {
+  width: 40%;
+  font-size: 18px;
+  color: #4A4A4A;
+}
+
+/* Feature Grid */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+}
+
+.feature-card {
+  border-top: 1px solid var(--border-color);
+  padding-top: 30px;
+}
+
+.feature-card h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.feature-card p {
+  font-size: 16px;
+  color: #4A4A4A;
+}
+
+/* Dynamic Policy Section */
+#policy-display {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+}
+
+.policy-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.policy-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  width: 30%;
+}
+
+.policy-desc {
+  width: 65%;
+  font-size: 16px;
+}
+
+/* Form */
+.form-section {
+  background-color: var(--navy);
+  color: #FFFFFF;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.form-section h2 {
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.form-section p {
+  margin-bottom: 40px;
+  opacity: 0.8;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 15px;
+  color: white;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+button {
+  background-color: var(--accent-color);
+  color: var(--navy);
+  border: none;
+  padding: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+button:hover {
+  background-color: #D4B985;
+}
+
+#form-message {
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+/* Footer */
+footer {
+  padding: 60px 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .hero h1 { font-size: 48px; }
+  .section-title { flex-direction: column; }
+  .section-title h2, .section-title p { width: 100%; }
+  .feature-grid { grid-template-columns: 1fr; }
+  .policy-item { flex-direction: column; }
+  .policy-name, .policy-desc { width: 100%; }
+  .policy-desc { margin-top: 10px; }
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vigilant | Automated Staff Engineer & Architectural Guardrails</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Vigilant</a>
+                <div class="nav-links">
+                    <a href="#vision">Vision</a>
+                    <a href="#how-it-works">Process</a>
+                    <a href="#policies">Policies</a>
+                    <a href="#beta" style="color: var(--accent-color);">Access Beta</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <span class="hero-label">High-Trust Architectural Oversight</span>
+                <h1>The Automated Staff Engineer for Scaling Teams.</h1>
+                <p>Recover 30% of your senior capacity. Vigilant enforces design patterns and prevents structural debt before the merge.</p>
+                <div class="hero-img-container">
+                    <img src="images/a-high-end-minimalist-software-architec.png" alt="Architectural Integrity Dashboard">
+                </div>
+            </div>
+        </section>
+
+        <section id="vision">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Stop the Scaling Chaos.</h2>
+                    <p>As teams grow from 20 to 100+ developers, architectural consistency collapses. Senior engineers become bottlenecks, spending hours correcting repetitive pattern violations in PRs.</p>
+                </div>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h3>Design Pattern Enforcement</h3>
+                        <p>Ensures new code follows established patterns like Service/Repository or Hexagonal architecture automatically.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Dependency Integrity</h3>
+                        <p>Flags circular dependencies and layer violations proactively, maintaining a clean system boundary.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Knowledge Transfer</h3>
+                        <p>Prevents "reinventing the wheel" by linking PRs to existing internal utilities and shared patterns.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Contextual Alignment. Not Just Linting.</h2>
+                    <p>Standard linters check syntax. Vigilant understands the system. It ingests your entire repository context to provide high-reasoning architectural feedback.</p>
+                </div>
+                <div style="padding: 40px; border: 1px solid var(--border-color); background: #fdfdfc;">
+                    <h3 style="margin-bottom: 20px;">The Analysis Loop</h3>
+                    <div style="display: flex; gap: 30px;">
+                        <div style="flex: 1; border-right: 1px solid var(--border-color); padding-right: 30px;">
+                            <h4 style="color: var(--accent-color); margin-bottom: 10px;">01. Ingest</h4>
+                            <p style="font-size: 14px;">Raw Git diffs are streamed to our High-Reasoning Engine (GPT-4o) with repo-wide context mapping.</p>
+                        </div>
+                        <div style="flex: 1; border-right: 1px solid var(--border-color); padding-right: 30px;">
+                            <h4 style="color: var(--accent-color); margin-bottom: 10px;">02. Verify</h4>
+                            <p style="font-size: 14px;">Changes are validated against "Policy as Code" definitions stored in your global architectural database.</p>
+                        </div>
+                        <div style="flex: 1;">
+                            <h4 style="color: var(--accent-color); margin-bottom: 10px;">03. Advise</h4>
+                            <p style="font-size: 14px;">Automated Staff Engineer comments are posted inline on GitHub, suggesting specific structural fixes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="policies">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Architectural Guardrails</h2>
+                    <p>Lead Architects define rules in plain English. Vigilant enforces them across every pull request. Here are the active standards for your team:</p>
+                </div>
+                <div id="policy-display">
+                    <!-- Loaded dynamically from database -->
+                    <p style="text-align: center; font-style: italic;">Syncing with Policy Engine...</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="beta" class="form-section">
+            <div class="container">
+                <h2>Join the Private Beta</h2>
+                <p>Limited to teams of 50-200 developers. Scale without the debt.</p>
+                <form id="waitlist-form">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Work Email" required>
+                    <input type="text" name="company" placeholder="Company Name" required>
+                    <input type="text" name="role" placeholder="Engineering Role (e.g. VP, Staff Engineer)">
+                    <button type="submit" id="submit-btn">Request Early Access</button>
+                    <div id="form-message"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-color); padding-top: 40px;">
+            <div>&copy; 2026 Vigilant. High-Trust Oversight.</div>
+            <div>Built for Mid-Market SaaS.</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
